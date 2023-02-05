@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+			<title>Products - The Omori Project</title>
+			<link rel = "icon" href = "https://cdn.discordapp.com/attachments/927107395509964840/1037008378335068210/omori.gif" type = "image/x-icon">
+			<link rel="stylesheet" href="stylesheet/style.css">
+			<link rel="stylesheet" href="stylesheet/styleProducts.css">
+	</head>
+	
+	<body>
+		<!-- Navigation Bar -->
+		<div class = "nav">
+			<ul> <b>
+				<a href = "index.html" style = "float: left"> Home </a>
+				<a href = "products.html" style = "float: left;"> Products </a>
+				<a href = "checkout.html" > Checkout </a>
+				<a href = "about-us.html" style = "float: right"> About  </a>
+			</b> </ul>
+		</div>
+	
+		<div class = "img1">	
+			<a href="index.html"><img src = "images/omori.gif" alt = "omori"></a>
+		</div>
+		
+		<div class = "titleTop"> <h2> THE OMORI PROJECT </h2> </div>
+		
+		<!-- Logo, Search Bar, and Cart -->
+		<div class = "border1">
+			<div class = "img2"> <a href="https://www.omori-game.com/en" target="_blank"><img src = "images/logoW.png" alt = "logo"></a></div>
+			<input type = "text" id = "searchBar" name = "" placeholder = "Looking for something?"  style = "color: #eee">
+			<button type = "submit" class = "searchButton" onclick = "searchItem()"> Search </button>
+			<div class = "img3"><a href="checkout.html"><img src = "images/cartW.png" alt = "logo"></a></div>
+		</div>
+	
+		<!-- TSHIRTS -->	
+		<div class = "productList" id = "productList">
+			<div class = "border2">
+				<div class = "shirt" id = "shirt1">
+					<img src = "images/T1.png" alt = "omori shirt 1">
+					<h3> Pixel Omori </h3> 
+					<p> PHP 490 </p> 
+				</div> 
+				
+				<div class = "shirt" id = "shirt2">
+					<img src = "images/T2.png" alt = "omori shirt 2">
+					<h3> Basil Tee </h3> 
+					<p> PHP 490 </p> 
+				</div> 
+				
+				<div class = "shirt" id = "shirt4">
+					<img src = "images/T4.png" alt = "omori shirt 3">
+					<h3> Chibi Aubrey</h3> 
+					<p> PHP 490 </p> 
+				</div> 	
+				
+				<div class = "shirt" id = "shirt3">
+					<img src = "images/T3.png" alt = "omori shirt 4">
+					<h3> Hanging Eye </h3> 
+					<p> PHP 490 </p> 
+				</div>	
+				
+				<br><br><p id = "productNumber" >4 products available</p>
+				
+			</div>
+		</div>
+
+		<!-- Contain the product details-->
+		<div class = "productDetails" id = "productInfo">
+			<!-- Shirt information and image -->
+			<div class = "shirtborder">
+				<!-- Back Button -->
+				<div class = "backbutton">
+					<a href = "products.html"> <button id = "backButton" style="padding-right: 10px;margin-right: 150px; margin-bottom:35px;"> Back </button> </a> 
+				</div>
+					
+				<table> 
+					<tr> 
+						<!-- Navigation Bar -->
+						<div class = "nav">
+							<ul> <b>
+								<a href = "index.html" style = "float: left"> Home </a>
+								<a href = "products.html" style = "float: left;"> Products </a>
+								<a href = "checkout.html" > Checkout </a>
+								<a href = "about-us.html" style = "float: right"> About  </a>
+							</b> </ul>
+						</div>
+
+						<td class = "a" style="padding-right: 70px;"> <img src = "images/T1.png" alt = "omori shirt 1" id = "shirtImg"> </img> </td>
+						<td class = "b" style="padding-left: 0px;padding-right: 70px;"> 
+							<h1 class = "shirtname" id = "shirtName">Shirt Name</h1> 	
+							<p class = "price"> PHP 490.00 </p>
+							<!-- long text ahead-->
+							<p> Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. </p>
+						
+							<div class = "someMenu" style = "margin-top: 30px;">
+								<center> <table> 
+									<tr> 
+										<th> Size </th>
+										<th> Quantity </th>
+									</tr> 
+									
+									<tr>
+										<td class = "sizeMenu"> <form> 
+												<select id = "size" name = "s">
+													<option> Extra Small </option>
+													<option> Small </option>
+													<option> Medium </option>
+													<option> Large </option>
+													<option> Extra Large </option>
+												</select>
+											</form> </td>
+										
+										<td> <div class = "quantityMenu"> 
+											<button id = "minus" onclick = "minus()"> - </button>
+											<span id = "res"> 0 </span>
+											<button id = "add" onclick = "add()"> + </button>
+										</div> </td>
+										
+									</tr>
+								</table> </center> 
+							
+								<div class = "addCartButton">
+									<button id = "abutton"> Add to Cart </button> 
+								</div>
+								
+							</div>
+						</td>
+					</tr>	
+				</table>
+				
+				<div class = "aMsg" id = "aMsg">
+					<div class = "aMsg-content">
+						<span class = "aMsg-close"> &times; </span>
+						<p style = "background-color: #1ab660;"> Pixel Omori has been added to your Cart! </p>
+					</div>
+				</div>
+				
+			</div> <!--shirtborder Class-->
+		</div> <!--productDetails Class-->
+		
+		<script type = "text/javascript">
+
+			// Search Button
+			function searchItem() {
+				const search = document.getElementById("searchBar").value.toUpperCase();
+				const storeItems = document.getElementById("productList");
+				const product = document.querySelectorAll(".shirt");
+				const pname = document.getElementsByTagName("h3");
+				j = 0;
+
+				for (var i = 0; i < pname.length; i++){
+					let match = product[i].getElementsByTagName("h3")[0];
+					j++;
+					if (match) {
+						let textVal = match.textContent || match.innerHTML;
+						
+						if (textVal.toUpperCase().indexOf(search) > -1){ // to display
+							product[i].style.display = "";
+							if ( j == 1 ) 
+								document.getElementById("productNumber").innerHTML = j + " product available";
+							else 
+								document.getElementById("productNumber").innerHTML = j + " products available";				
+						}
+						else{ // to hide products
+							product[i].style.display = "none";
+							document.getElementById("productNumber").innerHTML = "No products available";
+						}
+					}
+				}
+			}
+
+			// For the Product Details
+			var backButton = document.getElementById("backButton");		// back button
+			var productInfo = document.getElementById("productInfo");		// product details
+			var shirtName = document.getElementById("shirtName");			// product name
+			var shirtImg = document.getElementById("shirtImg");				// product name
+		
+			var shirt1 = document.getElementById ("shirt1");		// shirts
+			var shirt2= document.getElementById ("shirt2");
+			var shirt3 = document.getElementById ("shirt3");
+			var shirt4 = document.getElementById ("shirt4");
+
+			backButton.onclick = function() {		// close the product details and go back to product page
+				productInfo.style.display = "none";
+			}
+	
+			shirt1.onclick = function() {											// open an item's product details
+				productInfo.style.display = "block";		
+				document.getElementById("shirtName").innerHTML  = "Pixel Omori";	// change the product name
+				shirtImg.src = "images/T1.png";										// change the image to display
+			}
+			shirt2.onclick = function() {
+				productInfo.style.display = "block";
+				document.getElementById("shirtName").innerHTML  = "Basil Tee";
+				shirtImg.src = "images/T2.png";	
+			}
+			shirt3.onclick = function() {
+				productInfo.style.display = "block";
+				document.getElementById("shirtName").innerHTML  = "Hanging Eye";
+				shirtImg.src = "images/T3.png";	
+			}
+			shirt4.onclick = function() {
+				productInfo.style.display = "block";
+				document.getElementById("shirtName").innerHTML  = "Chibi Aubrey";
+				shirtImg.src = "images/T4.png";	
+			}
+			
+			// Feedback for adding item(s) to cart
+			var aMsg = document.getElementById("aMsg");
+			var openMsg = document.getElementById("abutton");
+			var closeMsg = document.getElementsByClassName("aMsg-close") [0];
+
+			openMsg.onclick = function() {
+				aMsg.style.display = "block"; 
+			}
+
+			closeMsg.onclick = function() {
+				aMsg.style.display = "none";
+			}
+		
+			// For the Quantity Menu
+			var num = 1;
+			document.getElementById("res") = num;
+			var minus = document.getElementById("minus");
+			var add = document.getElementById("add");
+			
+			// decrement
+			function minus() {
+				if (num <= 0) {
+					document.getElementById("res").innerHTML = 0;
+				}
+				else {
+					document.getElementById("res").innerHTML = num--;
+				}
+			}
+			// increment 
+			function add() {
+				document.getElementById("res").innerHTML = num++;
+			}
+		</script>
+		
+	</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Checkout - The Omori Project</title>
+        <link rel = "icon" href = "images/omori.gif" type = "image/x-icon">
+        <link rel="stylesheet" href="stylesheet/style.css">
+        <link rel="stylesheet" href="stylesheet/styleCheckout.css">
+        <script src = "script/checkout.js" async></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+		<div class = "nav">
+			<ul> <b>
+				<a href = "index.html" style = "float: left"> Home </a>
+				<a href = "products.html" style = "float: left"> Products </a>
+				<a href = "checkout.html"> Checkout </a>
+				<a href = "about-us.html" style = "float: right"> About  </a>
+			</b> </ul>
+		</div>
+        
+        <div class = "logo">
+            <center>
+                <a href = "index.html"><img src = "images/omori.gif" alt = "omori" height = "100px"></a>
+                <h3 class = "logo-title"> THE OMORI PROJECT </h3>
+            </center>
+        </div>
+		
+        <div class = "container">
+            <!--Billing Details-->
+            <div class = "container_left"> <!--container box on the left-->
+                <form action = ""> <!--used form to collect user input-->
+                    <div class = "row"> <!--another container to put on the two columns-->
+                        <div class = "column"> <!--first column-->
+                            <h1 class = "title">Billing Address</h1>
+                            <div class = "inputBox">
+                                <em>Full name</em>
+                                <input type = "text" placeholder = "John C. Doe">
+                            </div>
+                            <div class = "inputBox">
+                                <em>Email</em>
+                                <input type = "email" placeholder = "johndoe@example.com">
+                            </div>
+                            <div class = "inputBox">
+                                <em>Phone Number</em>
+                                <input type = "text" placeholder = "09123456789">
+                            </div>
+                            <div class = "flex"> <!--used flex to organize different boxes in one container-->
+                                <div class = "inputBox">
+                                    <em>Address</em>
+                                    <input type = "text" placeholder = "Street">
+                                </div>
+                                <div class = "inputBox">
+                                    <em>ㅤ</em>
+                                    <input type = "text" placeholder = "Barangay">
+                                </div>
+                            </div>
+                            <div class = "flex">
+                                <div class = "inputBox">
+                                    <em>City</em>
+                                    <input type = "text" placeholder = "City">
+                                </div>
+                                <div class = "inputBox">
+                                    <em>Province</em>
+                                    <input type = "text" placeholder = "Province">
+                                </div>
+                                <div class = "inputBox">
+                                    <em>Zip Code</em>
+                                    <input type = "text" placeholder = "4500">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "column"> <!--second column-->
+                            <h1 class = "title">Payment</h1>
+                            <div class="choice">
+                                <input type="radio" name ="choice" value="card">
+                                <label for="card" class="choice-text">ONLINE PAYMENT</label><br>
+                            </div>
+
+                            <div class = "inputBox">
+                                <em>Cards Accepted</em>
+                                <img src = "images/card_img.png" alt="">
+                            </div>
+                            <div class = "inputBox">
+                                <em>Name on Card</em>
+                                <input type = "text" placeholder = "Mr. John C. Doe">
+                            </div>
+                            <div class = "inputBox">
+                                <em>Card Number</em>
+                                <input type = "text" placeholder = "1111-2222-3333-4444">
+                            </div>
+                            <div class = "flex">
+                                <div class = "inputBox">
+                                    <em>Exp Date</em>
+                                    <input type = "text" placeholder = "MM">
+                                </div>
+                                <div class = "inputBox">
+                                    <em>ㅤ</em>
+                                    <input type = "text" placeholder = "YYYY">
+                                </div>
+                                <div class="inputBox">
+                                    <em>CVV</em>
+                                    <input type = "text" placeholder = "123">
+                                </div>
+                            </div>
+                            <div class="choice">
+                                <input type="radio" name = "choice" value="cod">
+                                <label for="cod" class="choice-text">CASH ON DELIVERY</label>
+                            </div>
+                            <div class = "checkBox">
+                                <input type = "checkbox" id = "shippingAddress" name = "shippingAddress">
+                                <label for = "shippingAddress">Shipping address same as billing address.</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            <!--Cart Summary-->
+            <div class = "container_right"> <!--container box on the left-->
+                <div class = "cart"> <!--another container to put the contents-->
+                    <h1 class = "cartHeader">Cart Summary</h1>
+
+                    <div class="cart-items" style="padding-top: 10px;">
+                        <div class = "product">
+                            <div class = "productImage">
+                                <img src = "images/T2.png" height = "80px"/>
+                            </div>
+                            <button style="font-size:24px" class = "close"><i class="fa fa-trash-o"></i></button>
+                            <div class = "details">
+                                <h1 class = "title">Chibi Aubrey</h1>
+                                <h3 class = "subtitle">490.00</h3>
+                                <p class = "size">Medium</p>
+                                <input type="number" class = "quantity-menu" name="quantity" min="1" max="20" value="3">
+                                
+                                <div class = "price">
+                                    <div class = "amount">1470.00</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "product">
+                            <div class = "productImage">
+                                <img src = "images/T4.png" height = "80px"/>
+                            </div>
+                            <button style="font-size:24px" class = "close"><i class="fa fa-trash-o"></i></button>
+                            <div class = "details">
+                                <h1 class = "title">Basil Tee</h1>
+                                <h3 class = "subtitle">490.00</h3>
+                                <p class = "size">Small</p>
+                                <input type="number" id="quantity" class = "quantity-menu" name="quantity" min="1" max="20" value="4">
+                                <div class = "price">
+                                    <div class = "amount">1960.00</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class = "product">
+                            <div class = "productImage">
+                                <img src = "images/T1.png" height = "80px"/>
+                            </div>
+                            <button style="font-size:24px" class = "close"><i class="fa fa-trash-o"></i></button>
+                            <div class = "details">
+                                <h1 class = "title">Pixel Omori</h1>
+                                <h3 class = "subtitle">490.00</h3>
+                                <p class = "size">Medium</p>
+                                <input type="number" id="quantity" class = "quantity-menu" name="quantity" min="1" max="20" value="1">
+                                <div class = "price">
+                                    <div class = "amount">490.00</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div style="margin: 10px 0 10px 0;">
+                            <h1 class= "none" style="display: none;" >You have no products on your cart.</h1>
+                        </div>
+                    </div>
+                        
+                    <div class="checkout-container">
+                        <hr>
+                        <div class = "checkout">
+                            <div class = "total">
+                                <div>
+                                    <div class = "subtotal">Sub Total</div>
+                                </div>
+                                <div class = "final-total">3920.00</div>
+                            </div>
+                            <div class = "total">
+                                <div class = "shipTotal">Shipping Total</div>
+                                <div class = "ship-total">100.00</div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class = "checkout">
+                            <div class = "total">
+                                <div class = "grand">Grand Total</div>
+                                <div class = "grand-total">3930.00</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href = "order-success.html"><button class = "bottomButton">PLACE ORDER</button></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

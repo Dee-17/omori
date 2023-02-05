@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>About Us - The Omori Project</title> <!--title of webpage in the browser tab-->
+    <link rel = "icon" href = "images/omori.gif" type = "image/x-icon">
+    <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="stylesheet" href="stylesheet/styleAbout.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class = "nav">
+        <ul> <b>
+            <a href = "index.html" style = "float: left"> Home </a>
+            <a href = "products.html" style = "float: left"> Products </a>
+            <a href = "checkout.html" > Checkout </a>
+            <a href = "about-us.html" style = "float: right;" > About  </a>
+        </b> </ul>
+    </div>
+
+    <center><br><br><h1>The Omori Project</h1> <!-- name of business-->
+
+    <a href="index.html"><img src="https://media.discordapp.net/attachments/1012588807901687888/1012593964068642877/Sunny_omori.gif" alt=omori></a> <!-- picture of logo -->
+
+    <p><i><b>Fear the Unseen!</b></i></p> <!-- tagline of business  -->
+
+    <!-- description of business  -->
+    <p><br>Explore a strange world full of colorful friends and foes. When the time comes, the path you’ve chosen will  determine your fate...<br> 
+        and perhaps the fate of others as well. In Omori we don't let our friends down, but be careful, there might be something behind you. <br><br></p>
+
+    <div class="column2"></div> <!-- dual column for contact details (left) & contact form (right) -->
+ 
+    <div class="left">
+        <span class="brsmall"></span>
+        <h2 style="padding-left: 50px">GET IN TOUCH WITH US!</h2> <br> <!-- contact details of business  -->
+        <ul>
+            <li class="contacts"><p><i><b>Phone Number:</b></i> +63123456789</p></li><span class="brsmall"></span>
+            <li class="contacts"><p><i><b>Email Address:</b></i> theomoriproject@gmail.com</p></li><span class="brsmall"></span>
+            <li class="contacts"><p><i><b>Location:</b></i> Bicol, Albay, Philippines</p></li>
+        </ul>
+
+        <p> <br><br> <!-- social media icons  -->
+            <a href="https://fb.watch/gzvO1-12cK/" target="_blank"><img src="images/facebook.png" alt="Facebook" class="SocMed" style="padding-left: 30px"></a>&nbsp; &nbsp;
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.png" alt="Twitter" class="SocMed"></a>&nbsp; &nbsp;
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.png" alt="Instagram" class="SocMed"></a>&nbsp; &nbsp;
+            <a href="https://youtu.be/xvFZjo5PgG0" target="_blank"><img src="images/youtube.png" alt="YouTube" class="SocMed"></a>
+        </p>
+    </div>
+
+    <div class="right">   <!-- question form -->
+        <h2>ANY QUESTIONS?</h2>
+        <form id="fcf-form-id" class="fcf-form-class">
+            <label for="Name" class="fcf-label"><i><b>Name</b></i></label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label"><i><b>Email Address</b></i></label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label"><i><b>Message</b></i></label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" style="color: #eee;" class="fcf-form-control" rows="6" required></textarea><br><br>
+            </div>
+        </div>
+        <input type="checkbox" id="newsletter" name="newsletter" value="newslettersignup">
+            <label for="newsletter">Join our Newsletter!</label><br>
+        <div class="fcf-form-group">
+            <br> <button type="submit" onclick="clicked(event)">SUBMIT</button>
+            <br><br><br><br>
+        </div>
+    </div>        
+</div>
+
+<script>
+    function clicked(e)
+    {
+        if (!confirm('Do you wish to submit?')) {
+            e.preventDefault();
+        }
+    }
+</script>
+
+</center>  <!-- centers all of the elements  -->
+
+</body>
+</html>

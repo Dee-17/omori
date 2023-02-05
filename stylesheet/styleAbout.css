@@ -1,0 +1,70 @@
+img { /* size of logo */
+    width: 15%; 
+}
+
+input[type=text], select, textarea { /* effects for name & message boxes */
+width: 50%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 8px;
+margin-bottom: 16px;
+}
+
+input[type=email], select, textarea { /* effects for email box */
+width: 50%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+margin-top: 8px;
+margin-bottom: 16px;
+}
+
+.SocMed{ /* size of the icons */
+    width:32px;
+    height:32px;
+}
+
+.left { /* column for contact details */
+    float:left; 
+    width: 45%; 
+}
+
+.right { /* column for questions form */
+    float:right; 
+    width: 55%; 
+}
+
+.contacts {
+    list-style-type: none; /* remove bullets */
+}
+
+button {
+    display: inline-block;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(187, 187, 187);
+}
+
+.brsmall {
+    display: block;
+    margin-bottom: 25px;
+}
+
+textarea {  
+    font-family:"Arial";  
+    font-size: 12px;
+}
+
+input {
+    color: #eee;
+}
